@@ -3,7 +3,7 @@ import './Header.css'
 export default function Header(props){
     return(
         <header className='heather'>
-            Cabeçalho
+            <h2>{props.title}</h2>
         </header>
     )
 }

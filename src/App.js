@@ -8,8 +8,8 @@ import Footer from './components/template/Footer';
 function App() {
   return (
     <div className="App">
-      <Header />
       <Logo />
+      <Header />
       <Menu />
       <Main />
       <Footer />

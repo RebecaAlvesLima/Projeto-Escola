@@ -5,10 +5,14 @@ import React from 'react'
 export default function Main(props){
     return(
         <>
-            <Header />
-            <main className='content'>
-                Conteúdo
-            </main>
+            <div className='content'>
+                <Header {...props}/>
+                <main className='content'>
+                    <div>
+                        {props.children}
+                    </div>
+                </main>
+            </div>
         </>
     )
 }

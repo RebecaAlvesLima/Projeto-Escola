@@ -1,9 +1,10 @@
 import './Footer.js'
+import React from 'react'
 
 export default function Footer(props){
     return(
         <footer className='footer'>
-            Rodapé
+            <span>..: Using React :..</span>
         </footer>
     )
 }
