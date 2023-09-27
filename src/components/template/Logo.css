@@ -1,9 +1,10 @@
-aside.logo{
+aside.logo {
     padding: 5px;
     background-color: var(--bg-menu);
+    
 }
 
-aside.logo img{
+aside.logo img {
     width: 100%;
-    height: 150px;
+    height: 100px;
 }

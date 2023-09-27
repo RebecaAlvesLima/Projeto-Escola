@@ -1,7 +1,8 @@
-nav.menu{
+nav.menu {
     background-color: var(--bg-menu);
     text-align: right;
 }
+
 .menu a{
     text-decoration: none;
     color: #000;
@@ -9,6 +10,7 @@ nav.menu{
     font-size: 30px;
     margin-top: 20px;
 }
-.menu a:hover{
-    color: #538cc6;
+
+.menu a:hover {
+    color: #538cc6
 }
