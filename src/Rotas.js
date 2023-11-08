@@ -2,6 +2,7 @@ import React from "react";
 import { Routes, Route } from "react-router-dom";
 import Main from "./components/template/Main";
 import CrudAluno from "./components/CrudAluno/CrudAluno";
+import CrudCurso from "./components/CrudCurso/CrudCurso";
 
 export default function Rotas(){
     return(
@@ -25,6 +26,9 @@ export default function Rotas(){
                     <CrudAluno />
                 }
                 />
+            <Route path="/cursos"
+               element={<CrudCurso />}/>
         </Routes>
+            
     )
 }

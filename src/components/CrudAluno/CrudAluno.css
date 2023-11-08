@@ -1,63 +1,69 @@
-.titulo{
+.tituloListagem {
     margin-left: 20px;
 }
-.ListaAlunos{
+
+.listaAlunos {
+    text-align: left;
+    width:97%;
     margin-left: 20px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', 'Arial', 'sans-serif';
+    font-family:
+    'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande'
 }
-.cabecTabela{
+
+.cabecTabela {
     color: white;
     background-color: black;
-    font-size: 20px;
+    font-size: 30px;
     text-align: left;
 }
-th, td{
+
+.dropdown {
+	height: 45px;
+	max-width: 300px;
+	
+	font-family: sans-serif;
+	
+	overflow: hidden;
+	transition: all 0.2s ease-out;
+	cursor: pointer;
+}
+
+.optionValue {
+    height: 45px;
+    padding: 40px;
+}
+
+th, td {
     padding: 10px;
 }
-.tabTituloRA{
+
+.tabTituloRa {
     width: 100px;
 }
-.tabTituloNome{
-    width: 400px;
+
+.tabTituloNome {
+    width: 800px;
 }
-input[type=text]{
+
+input[type=text] {
     display: inline-block;
     width: 20%;
     padding: 12px;
     margin: 8px 0;
 }
-input[type=number]{
+
+input[type=number] {
     padding: 12px;
     width: 50px;
 }
-.inclui-container{
+
+.inclui-container {
     margin: 20px;
     border-radius: 5px;
     background-color: #f2f2f2;
     padding: 20px;
 }
-.btnSalvar{
-    background-color: lightblue;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    margin: 5px 5px 5px 30px;
-}
-.btnCancelar{
-    background-color: gainsboro;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    margin: 5px;
-}
-label {
-    padding: 10px;
-}
-.tituloCadastro {
-    margin-left: 30px;
-}
+
 .btnSalvar {
     background-color: lightblue;
     padding: 12px 20px;
@@ -66,6 +72,7 @@ label {
     cursor: pointer;
     margin: 5px 5px 5px 30px;
 }
+
 .btnCancelar{
     background-color: gainsboro;
     padding: 12px 20px;
@@ -74,6 +81,11 @@ label {
     cursor: pointer;
     margin: 5px;
 }
-label{
+
+label {
     padding: 10px;
+}
+
+.tituloCadastro {
+    margin-left: 30px;
 }
