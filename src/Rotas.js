@@ -27,10 +27,12 @@ export default function Rotas(){
                     <CrudAluno />
                 }
                 />
+
             <Route path="/cursos"
-               element={
-               <CrudCurso />
-               }/>
+                element={
+                    <CrudCurso />
+                }/>
+        
             <Route path="/carometro"
                     element={
                         <CrudCarometro />
