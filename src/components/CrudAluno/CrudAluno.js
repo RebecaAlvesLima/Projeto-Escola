@@ -33,6 +33,7 @@ export default class CrudAluno extends Component{
         const metodo = aluno.id? 'put': 'post';
         const url = aluno.id? `${urlAPI}/${aluno.id}`: urlAPI;
 
+        console.log(aluno)
         axios[metodo](url, aluno).then(resp =>{
             const lista = this.getListaAtualizada(resp.data)
             this.setState({ aluno: initialState.aluno, lista })

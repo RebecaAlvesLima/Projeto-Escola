@@ -4,14 +4,16 @@ import './CrudCurso.css';
 import Main from '../template/Main';
 
 const title = "Cadastro de Cursos";
-const urlAPI = "http://localhost:5121/api/curso"
 
+const urlAPI = "http://localhost:5121/api/curso"
 const initialState = {
-    curso: {id: 0, codCurso: '', nomeCurso: '', periodo: ''},
+    curso: {id: 0, codCurso: 0, nomeCurso: '', periodo: ''},
     lista: []
 }
+
 export default class CrudCurso extends Component{
-    state = {...initialState}
+
+      state = {...initialState}
 
     componentDidMount(){
         axios(urlAPI).then(resp => {
@@ -22,10 +24,10 @@ export default class CrudCurso extends Component{
     limpar(){
         this.setState({ curso: initialState.curso });
     }
-
+    
     salvar(){
         const curso = this.state.curso;
-        curso.id = Number(curso.id);
+        curso.codCurso = Number(curso.codCurso);
         const metodo = curso.id? 'put': 'post';
         const url = curso.id? `${urlAPI}/${curso.id}`: urlAPI;
 
