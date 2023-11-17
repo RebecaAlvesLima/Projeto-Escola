@@ -1,0 +1,7 @@
+.card{
+    width: 400px;
+    height: 400px;
+    display: inline-block;
+    flex-wrap: wrap;
+    font-size: medium;
+}

@@ -31,18 +31,20 @@ export default class CrudCurso extends Component{
         const metodo = curso.id? 'put': 'post';
         const url = curso.id? `${urlAPI}/${curso.id}`: urlAPI;
 
-        console.log(curso)
+        
         axios[metodo](url, curso).then(resp =>{
-            const lista = this.getListaAtualizada(resp.data)
-            this.setState({ curso: initialState.curso, lista })
+            console.log(curso)
+            const listaNova = this.getListaAtualizada(resp.data)
+            this.setState({curso: initialState.curso, listaNova})
         })
     }
 
     getListaAtualizada(curso, add = true){
-        const lista = this.state.lista.filter(a => a.id !== curso.id);
-        if(add)
-            lista.unshift(curso);
-        return lista;
+        const listaNova = this.state.lista.filter(c => c.id !== curso.id);
+        if(add){
+            listaNova.unshift(curso);
+        }
+        return listaNova;
     }
 
     atualizaCampo(event){
